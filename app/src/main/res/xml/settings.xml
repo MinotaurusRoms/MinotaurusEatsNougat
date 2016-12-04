@@ -19,23 +19,6 @@
             <com.wubydax.romcontrol.v2.prefs.MyListPreference android:title="Font style" android:key="network_traffic_text_style" android:defaultValue="0" android:entries="@array/traffic_style_entries" android:entryValues="@array/traffic_style_entry_values"/>
             <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference android:title="Text size scale factor" android:key="network_traffic_scale" app:maxValue="10" android:defaultValue="10"/>
         </PreferenceCategory>
-        <PreferenceCategory
-            android:title="Statusbar icon color">
-            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Separate or Global colors" android:key="is_global_sb_color" android:defaultValue="true" android:summaryOn="Seperate colors" android:summaryOff="Global colors" app:packageNameToKill="com.android.systemui" app:isSilent="false"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Global color" android:key="global_sb_color" android:defaultValue="#ffffff" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Battery Percent Color" android:defaultValue="#ffffff" android:key="battery_percent_color" android:dependency="is_global_sb_color" app:packageNameToKill="com.android.systemui" app:isSilent="false"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Color" android:defaultValue="#ffffff" android:key="gear_clock_color" android:dependency="is_global_sb_color" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Status Icons Color" android:defaultValue="#ffffff" android:key="status_icons_color" android:dependency="is_global_sb_color" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Notification Icons Color" android:defaultValue="#ffffff" android:key="notification_icons_color" android:dependency="is_global_sb_color" app:rebootDevice="true"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Wifi Signal Color" android:defaultValue="#ffffff" android:key="wifi_signal_color" android:dependency="is_global_sb_color" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Mobile Signal Color" android:defaultValue="#ffffff" android:key="mobile_signal_color" android:dependency="is_global_sb_color" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Mobile Type and Arrows Color" android:defaultValue="#ffffff" android:key="mobile_type_color" android:dependency="is_global_sb_color" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Roaming Icon Color" android:defaultValue="#ffffff" android:key="mobile_roaming_color" android:dependency="is_global_sb_color" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Airplanemode Color" android:defaultValue="#ffffff" android:key="airplane_mode_color" android:dependency="is_global_sb_color" />
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Upload Text Color" android:defaultValue="#ffffff" android:key="network_traffic_upload_color" android:dependency="is_global_sb_color" app:packageNameToKill="com.android.systemui" app:isSilent="false"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Download Text Color" android:defaultValue="#ffffff" android:key="network_traffic_download_color" android:dependency="is_global_sb_color" app:packageNameToKill="com.android.systemui" app:isSilent="false"/>
-            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Traffic Arrows Color" android:key="network_traffic_arrow_color" android:defaultValue="#ffffff" android:dependency="is_global_sb_color" app:packageNameToKill="com.android.systemui" app:isSilent="false"/>
-        </PreferenceCategory>
     </PreferenceScreen>
 
 
