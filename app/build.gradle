@@ -35,9 +35,9 @@ android {
         minSdkVersion 21
         //noinspection OldTargetApi
         targetSdkVersion 22
-        versionCode 3
-        versionName "3.0"
-        project.archivesBaseName = "MinotaurusEatsNougat V3"
+        versionCode 5
+        versionName "5.0"
+        project.archivesBaseName = "MinotaurusEatsNougat V5"
     }
 
     buildTypes {
